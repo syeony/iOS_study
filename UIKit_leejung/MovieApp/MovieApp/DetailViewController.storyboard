@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="Y6W-OH-hqX" customClass="DetailViewController" customModule="MovieApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8J-sm-Sig">
+                                <rect key="frame" x="0.0" y="159" width="393" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="O2J-8T-3Hy"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDF-ta-ylb">
+                                <rect key="frame" x="20" y="434" width="353" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6o-CA-wlD">
+                                <rect key="frame" x="20" y="475" width="353" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jka-2C-8FE">
+                                <rect key="frame" x="220" y="379" width="65" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PLAY"/>
+                                <connections>
+                                    <action selector="play:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Qnd-lW-pDX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgq-wP-goC">
+                                <rect key="frame" x="305" y="379" width="68" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="STOP"/>
+                                <connections>
+                                    <action selector="stop:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8lv-YD-xAt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdK-8K-UvZ">
+                                <rect key="frame" x="309" y="69" width="74" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="cancel"/>
+                                <connections>
+                                    <action selector="close:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yog-Gh-dBT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jka-2C-8FE" firstAttribute="top" secondItem="P8J-sm-Sig" secondAttribute="bottom" constant="20" id="0Za-1n-aBd"/>
+                            <constraint firstItem="Qgq-wP-goC" firstAttribute="top" secondItem="P8J-sm-Sig" secondAttribute="bottom" constant="20" id="3oN-WB-Bld"/>
+                            <constraint firstItem="P8J-sm-Sig" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="5zO-W1-JBV"/>
+                            <constraint firstItem="PDF-ta-ylb" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="A7o-ST-Fqq"/>
+                            <constraint firstItem="P8J-sm-Sig" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="DMN-XS-6tO"/>
+                            <constraint firstItem="Qgq-wP-goC" firstAttribute="leading" secondItem="Jka-2C-8FE" secondAttribute="trailing" constant="20" id="LaR-C6-2In"/>
+                            <constraint firstItem="o6o-CA-wlD" firstAttribute="top" secondItem="PDF-ta-ylb" secondAttribute="bottom" constant="20" id="Uy3-VC-t7z"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PDF-ta-ylb" secondAttribute="trailing" constant="20" id="cqI-ek-OpI"/>
+                            <constraint firstItem="PDF-ta-ylb" firstAttribute="top" secondItem="Jka-2C-8FE" secondAttribute="bottom" constant="20" id="d9v-EC-UPV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gdK-8K-UvZ" secondAttribute="trailing" constant="10" id="dDA-WX-s3L"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="P8J-sm-Sig" secondAttribute="trailing" id="gzd-2o-iCh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Qgq-wP-goC" secondAttribute="trailing" constant="20" id="hYd-wi-gSb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="o6o-CA-wlD" secondAttribute="bottom" constant="20" id="sxR-PB-CVi"/>
+                            <constraint firstItem="gdK-8K-UvZ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="tky-zD-mlP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="o6o-CA-wlD" secondAttribute="trailing" constant="20" id="wHp-FS-Tx9"/>
+                            <constraint firstItem="o6o-CA-wlD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="wWh-9U-LEU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="o6o-CA-wlD" id="zfo-6T-wwZ"/>
+                        <outlet property="movieContainer" destination="P8J-sm-Sig" id="4bN-zH-ld1"/>
+                        <outlet property="titleLabel" destination="PDF-ta-ylb" id="SZq-pP-hxB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

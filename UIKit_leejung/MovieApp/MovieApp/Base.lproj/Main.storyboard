@@ -47,7 +47,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="price" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XER-Zc-CZu">
-                                                    <rect key="frame" x="100" y="130.66666666666666" width="273" height="20.333333333333343"/>
+                                                    <rect key="frame" x="100" y="115.66666666666667" width="273" height="20.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -60,7 +60,7 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="XER-Zc-CZu" secondAttribute="bottom" constant="5" id="8Cj-OL-UvE"/>
+                                                <constraint firstAttribute="bottom" secondItem="XER-Zc-CZu" secondAttribute="bottom" constant="20" id="8Cj-OL-UvE"/>
                                                 <constraint firstItem="XER-Zc-CZu" firstAttribute="leading" secondItem="lAF-cG-ehx" secondAttribute="trailing" constant="5" id="FW0-sq-LAn"/>
                                                 <constraint firstItem="lAF-cG-ehx" firstAttribute="leading" secondItem="TBU-Ee-iqp" secondAttribute="leading" constant="5" id="GKn-aa-nNK"/>
                                                 <constraint firstItem="Fms-XX-gHW" firstAttribute="leading" secondItem="lAF-cG-ehx" secondAttribute="trailing" constant="5" id="HjK-uE-b7f"/>
